@@ -1,0 +1,20 @@
+@font-face {
+    font-family: TTTravels-Bold;
+    src: url('../fonts/TTTravels-Bold.ttf');
+}
+@font-face {
+    font-family: TTTravels-DemiBold;
+    src: url('../fonts/TTTravels-DemiBold.ttf');
+}
+@font-face {
+    font-family: TTTravels-Light;
+    src:url('../fonts/TTTravels-Light.ttf');
+}
+@font-face {
+    font-family: TTTravels-Medium;
+    src:url('../fonts/TTTravels-Medium.ttf');
+}
+@font-face {
+    font-family: TTTravels-Regular;
+    src:url('../fonts/TTTravels-Regular.ttf');
+}
