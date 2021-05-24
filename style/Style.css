@@ -92,11 +92,36 @@ section {
     justify-content: space-between;
 }
 
-.advantages {
+.advantage-wrapper {
+    position:relative;
     height:328px;
     width:300px;
-    background-color:#F3F6FB;
+    background-color:#5A30F0;
+    padding:30px;
+    box-sizing: border-box;
+    border-radius: 8px;
 }
+.advantage-wrapper > p {
+    text-align:left;
+    font-family:TTTravels-Light;
+    font-size:16px;
+    line-height: 22.4px;
+    color:#FFFFFF;
+}
+.advantage-wrapper:hover > div {
+    z-index:-1;
+}
+
+.advantages {
+    height:100%;
+    width:100%;
+    background-color:#F3F6FB;
+    position:absolute;
+    left:0;
+    top:0;
+    border-radius: 8px;
+}
+
 .advantages p {
     font-family: TTTravels-Regular;
     line-height: 31.2px;
@@ -132,8 +157,101 @@ section {
     background-size: 65%;
 }
 
+/* ------ стили к блоку how we are working ------ */
+
+.how-we-are-working {
+    width:76%;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 52px;
+}
+.how-we-are-workink-title, .how-we-are-workink-discription {
+    width:50%;
+}
+.how-we-are-workink-title h2 {
+    font-family:TTTravels-Light;
+    font-size:54px;
+    line-height: 52.8px;
+    color:#404040;
+}
+.how-we-are-workink-discription p {
+    font-family:TTTravels-Light;
+    font-size: 18px;
+    line-height: 25.2px;
+    color:#404040;
+}
+
+
 /* ------ стили к footer ------*/
 
+footer .footer-bg {
+    background-image: url('../images/footerBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:76%;
+    height:630px;
+    margin:0 auto;
+}
+
+/*------  стили к кнопке ------*/
+
+.order-cleaning {
+    width:190px;
+    height:190px;
+    background-color:#5A30F0;
+    border-radius:50%;
+    position:fixed;
+    left:50%;
+    margin-left:-90px;
+    bottom:0;
+}
+
+.order-cleaning > p {
+    margin:40% auto;
+    width:84%;
+    font-family: TTTravels-Regular;
+    font-size:120%;
+    line-height: 23.4px;
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+    transform:rotateZ(-25deg);
+}
+
+@keyframes smallBtn {
+    from {width: 190px; height:190px;}
+    to {width: 150px; height:150px;}
+}
+.order-btn-animation-to-small {
+    animation-name: smallBtn;
+    animation-delay:0s;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes growBtn {
+    from {width: 150px; height:150px;}
+    to {width: 190px; height:190px;}
+}
+
+.order-btn-animation-to-grow {
+    animation-name: growBtn;
+    animation-delay:0s;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+}
+@keyframes btnGoOut {
+    from {bottom:0;}
+    to {bottom: -200px;}
+}
+.order-btn-animation-to-out {
+    animation-name: btnGoOut;
+    animation-delay:0s;
+    animation-duration:1.5s;
+    animation-fill-mode: forwards;
+}
 
 
 
