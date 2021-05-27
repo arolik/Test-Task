@@ -1,0 +1,145 @@
+/*  здесь установлены стили для  устройств с разными разрешениями */
+
+@media screen and (max-width:1200px) {
+    /* стил к header */
+    header {
+        max-width:1200px;
+    }
+    .menu {
+        flex-direction: column;
+        
+    }
+    .menu-handle {
+        display:none;
+    }
+    .header-bg {
+        position:realtive;
+        width:100%;
+    }
+    .header-discription {
+        width:100%;
+        position:absolute;
+        left:0;
+        top:0;
+    }
+    /* стили к блоку с карточками */
+    
+    section {
+        max-width:1200px;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+    .advantage-wrapper {
+        margin-bottom: 20px;
+    }
+    /* стили к footer */
+    footer {
+        height:460px;
+    }
+    .footer-image {
+        max-height:460px;
+    }
+    .footer-menu h4 {
+        margin-bottom: 100px;
+    }
+    .footer-menu p {
+        font-style:16px;
+        line-height: 32px;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+
+/* стили к блоку с карточками */
+
+section {
+    max-width:992px;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+.advantage-wrapper {
+    margin-right: 20px;
+}
+
+/* стили к footer */
+    .footer-menu h4 {
+        margin-bottom: 50px;
+    }
+    .footer-menu p {
+        font-style:10px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    /* стили к footer */
+    footer {
+        height:412px;
+    }
+    .footer-menu {
+        width: 30%;
+    }
+    .footer-menu h4 {
+        margin-bottom: 25px;
+    }
+    .footer-menu p {
+        font-style:10px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    .how-we-are-working {
+        flex-direction: column;
+    }
+
+
+    /* стили к footer */
+    footer {
+        height:280px;
+    }
+    .footer-menu {
+        width: 40%;
+        padding-top:5px;
+        padding-left: 5px;
+    }
+    .footer-menu h4 {
+        margin-bottom: 12px;
+    }
+    .footer-menu p {
+        font-style:8px;
+        line-height: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
