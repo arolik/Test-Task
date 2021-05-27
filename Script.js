@@ -85,7 +85,7 @@ let footerMenu = document.querySelector('#footerMenu');
     let rooms = footerMenu.querySelectorAll('p');
     let footerSlide = document.querySelector('#footerSlide');
     let img = footerSlide.querySelector('img');
-    let namesImages = ['kitchen.png', '', 'bathroom.png', 'hallway.png'];
+    let namesImages = ['kitchen.png', 'room.png', 'bathroom.png', 'hallway.png'];
 
         
 function addEvents(elems){
