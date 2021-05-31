@@ -82,27 +82,62 @@ function hideMenu(menu, slider){
 /* скрипты для слайдера */
 
 let footerMenu = document.querySelector('#footerMenu');
-    let rooms = footerMenu.querySelectorAll('p');
-    let footerSlide = document.querySelector('#footerSlide');
-    let img = footerSlide.querySelector('img');
-    let namesImages = ['kitchen.png', 'room.png', 'bathroom.png', 'hallway.png'];
-
-        
+let rooms = footerMenu.querySelectorAll('p');
+let footerSlide = document.querySelector('#footerSlide');
+let img = footerSlide.querySelector('img');
+let namesImages = ['kitchen.png', 'room.png', 'bathroom.png', 'hallway.png'];
+   
 function addEvents(elems){
-    
     for(let i=0; i<elems.length; i++){
-        elems[i].addEventListener('click', nextMessage);
+        elems[i].addEventListener('click', nextImage );
     }
 }
        
-function nextMessage(){
+function nextImage(){
     let imgId = this.dataset.id;
     for(let i=0; i<namesImages.length; i++){
         img.src = "./images/" + namesImages[imgId];
     }
 }
-
 addEvents(rooms);
+
+/* скрипты для меню бургера */
+
+let menuBtn = document.querySelector('.menu-btn')
+menuBtn.addEventListener('click', showNavigation);
+
+function showNavigation(){
+    this.preventDefault;
+    if(!this.classList.contains('menu-btn-active')){
+        this.classList.add('menu-btn-active');
+        this.removeEventListener('click', showNavigation);
+        this.addEventListener('click', hideNavigation);
+        showList(this);
+    }
+}
+
+function hideNavigation(){
+    this.preventDefault;
+    if(this.classList.contains('menu-btn-active')){
+        this.classList.remove('menu-btn-active');
+        this.removeEventListener('click', hideNavigation);
+        this.addEventListener('click', showNavigation);
+        hideList(this);
+    }
+}
+
+function showList(btn){
+    let parent = btn.closest('.menu');
+    parent.classList.add('showList');
+}
+
+function hideList(btn){
+    let parent = btn.closest('.menu');
+    parent.classList.remove('showList');
+}
+
+
+
 
 
 

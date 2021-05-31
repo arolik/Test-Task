@@ -7,8 +7,8 @@
     }
     .menu {
         flex-direction: column;
-        
     }
+    
     .menu-handle {
         display:none;
     }
@@ -33,12 +33,7 @@
         margin-bottom: 20px;
     }
     /* стили к footer */
-    footer {
-        height:460px;
-    }
-    .footer-image {
-        max-height:460px;
-    }
+    
     .footer-menu h4 {
         margin-bottom: 100px;
     }
@@ -50,6 +45,39 @@
 }
 
 @media screen and (max-width:992px) {
+    /* стили к header menu */
+    header {
+        width: 100%;
+    }
+    .menu {
+        width:100%;
+        background-color:#5A30F0;
+        margin: 0 0;
+        display:table;
+        transform:translateY(-100%);
+        transition: 0.5s;
+        position:fixed;
+        z-index:5;
+        box-sizing: border-box;
+    }
+    .menu nav {
+        flex-direction: column;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .menu nav a{
+        margin:5px auto; 
+    }
+    
+    .btnFix {
+        position: fixed;
+        left:10px;
+        top:110%;
+    }
+    .showList {
+        transform:translateY(0px);
+        
+    }
 
 /* стили к блоку с карточками */
 
@@ -64,6 +92,9 @@ section {
 }
 
 /* стили к footer */
+    .footer-menu {
+        padding-left:30px;
+    }
     .footer-menu h4 {
         margin-bottom: 50px;
     }
@@ -71,15 +102,30 @@ section {
         font-style:10px;
         line-height: 16px;
     }
+    /* стили к кнопке */
+    .order-cleaning {
+        display:none;
+    }
+
+
 }
 
 @media screen and (max-width: 768px){
+    /* стили к header  */
+    .header-title h1 {
+        font-size:45px;
+        line-height: 50px;
+    }
+    section {
+        margin-bottom: 50px;
+    }
     /* стили к footer */
     footer {
-        height:412px;
+        min-height:412px;
     }
     .footer-menu {
         width: 30%;
+        padding-left:10px;
     }
     .footer-menu h4 {
         margin-bottom: 25px;
@@ -91,17 +137,24 @@ section {
 }
 
 @media screen and (max-width: 576px){
+    /* стили к header  */
+    .header-title h1 {
+        font-size:35px;
+        line-height: 41px;
+    }
 
     .how-we-are-working {
         flex-direction: column;
     }
-
+    .how-we-are-workink-title {
+        width:100%;
+        font-size:25px;
+    }
 
     /* стили к footer */
-    footer {
-        height:280px;
-    }
+    
     .footer-menu {
+        
         width: 40%;
         padding-top:5px;
         padding-left: 5px;
